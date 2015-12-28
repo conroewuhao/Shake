@@ -1,0 +1,327 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6827897C1C31218700657056 /* DBThings.m in Sources */ = {isa = PBXBuildFile; fileRef = 6827897B1C31218700657056 /* DBThings.m */; };
+		682789FA1C313ABE00657056 /* UIColor+HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 682789F91C313ABE00657056 /* UIColor+HexColor.m */; };
+		68681F2E1C31021A001CB2D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68681F2D1C31021A001CB2D7 /* main.m */; };
+		68681F311C31021A001CB2D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68681F301C31021A001CB2D7 /* AppDelegate.m */; };
+		68681F331C31021A001CB2D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68681F321C31021A001CB2D7 /* Assets.xcassets */; };
+		68681F361C31021A001CB2D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68681F341C31021A001CB2D7 /* LaunchScreen.storyboard */; };
+		68681F3F1C310235001CB2D7 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68681F3E1C310235001CB2D7 /* RootViewController.m */; };
+		68681F421C310745001CB2D7 /* FoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68681F411C310745001CB2D7 /* FoodViewController.m */; };
+		68681F481C310792001CB2D7 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68681F471C310792001CB2D7 /* HistoryViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6827897A1C31218700657056 /* DBThings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBThings.h; sourceTree = "<group>"; };
+		6827897B1C31218700657056 /* DBThings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBThings.m; sourceTree = "<group>"; };
+		682789F81C313ABE00657056 /* UIColor+HexColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexColor.h"; sourceTree = "<group>"; };
+		682789F91C313ABE00657056 /* UIColor+HexColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexColor.m"; sourceTree = "<group>"; };
+		68681F291C31021A001CB2D7 /* Shake-Food.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shake-Food.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68681F2D1C31021A001CB2D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		68681F2F1C31021A001CB2D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		68681F301C31021A001CB2D7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		68681F321C31021A001CB2D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		68681F351C31021A001CB2D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		68681F371C31021A001CB2D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68681F3D1C310235001CB2D7 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		68681F3E1C310235001CB2D7 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		68681F401C310745001CB2D7 /* FoodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodViewController.h; sourceTree = "<group>"; };
+		68681F411C310745001CB2D7 /* FoodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodViewController.m; sourceTree = "<group>"; };
+		68681F461C310792001CB2D7 /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
+		68681F471C310792001CB2D7 /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68681F261C31021A001CB2D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		68681F201C31021A001CB2D7 = {
+			isa = PBXGroup;
+			children = (
+				68681F2B1C31021A001CB2D7 /* Shake-Food */,
+				68681F2A1C31021A001CB2D7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		68681F2A1C31021A001CB2D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68681F291C31021A001CB2D7 /* Shake-Food.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68681F2B1C31021A001CB2D7 /* Shake-Food */ = {
+			isa = PBXGroup;
+			children = (
+				68681F2F1C31021A001CB2D7 /* AppDelegate.h */,
+				68681F301C31021A001CB2D7 /* AppDelegate.m */,
+				68681F321C31021A001CB2D7 /* Assets.xcassets */,
+				68681F341C31021A001CB2D7 /* LaunchScreen.storyboard */,
+				68681F371C31021A001CB2D7 /* Info.plist */,
+				68681F2C1C31021A001CB2D7 /* Supporting Files */,
+				68681F3D1C310235001CB2D7 /* RootViewController.h */,
+				68681F3E1C310235001CB2D7 /* RootViewController.m */,
+				68681F401C310745001CB2D7 /* FoodViewController.h */,
+				68681F411C310745001CB2D7 /* FoodViewController.m */,
+				68681F461C310792001CB2D7 /* HistoryViewController.h */,
+				68681F471C310792001CB2D7 /* HistoryViewController.m */,
+				6827897A1C31218700657056 /* DBThings.h */,
+				6827897B1C31218700657056 /* DBThings.m */,
+				682789F81C313ABE00657056 /* UIColor+HexColor.h */,
+				682789F91C313ABE00657056 /* UIColor+HexColor.m */,
+			);
+			path = "Shake-Food";
+			sourceTree = "<group>";
+		};
+		68681F2C1C31021A001CB2D7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				68681F2D1C31021A001CB2D7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		68681F281C31021A001CB2D7 /* Shake-Food */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68681F3A1C31021A001CB2D7 /* Build configuration list for PBXNativeTarget "Shake-Food" */;
+			buildPhases = (
+				68681F251C31021A001CB2D7 /* Sources */,
+				68681F261C31021A001CB2D7 /* Frameworks */,
+				68681F271C31021A001CB2D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Shake-Food";
+			productName = "Shake-Food";
+			productReference = 68681F291C31021A001CB2D7 /* Shake-Food.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68681F211C31021A001CB2D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = wuhao;
+				TargetAttributes = {
+					68681F281C31021A001CB2D7 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = ATUZ66J7S8;
+					};
+				};
+			};
+			buildConfigurationList = 68681F241C31021A001CB2D7 /* Build configuration list for PBXProject "Shake-Food" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 68681F201C31021A001CB2D7;
+			productRefGroup = 68681F2A1C31021A001CB2D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68681F281C31021A001CB2D7 /* Shake-Food */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68681F271C31021A001CB2D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68681F331C31021A001CB2D7 /* Assets.xcassets in Resources */,
+				68681F361C31021A001CB2D7 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68681F251C31021A001CB2D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				682789FA1C313ABE00657056 /* UIColor+HexColor.m in Sources */,
+				68681F311C31021A001CB2D7 /* AppDelegate.m in Sources */,
+				68681F2E1C31021A001CB2D7 /* main.m in Sources */,
+				6827897C1C31218700657056 /* DBThings.m in Sources */,
+				68681F421C310745001CB2D7 /* FoodViewController.m in Sources */,
+				68681F481C310792001CB2D7 /* HistoryViewController.m in Sources */,
+				68681F3F1C310235001CB2D7 /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		68681F341C31021A001CB2D7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68681F351C31021A001CB2D7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		68681F381C31021A001CB2D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		68681F391C31021A001CB2D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		68681F3B1C31021A001CB2D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Shake-Food/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "houbu.Shake-Food";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		68681F3C1C31021A001CB2D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Shake-Food/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "houbu.Shake-Food";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68681F241C31021A001CB2D7 /* Build configuration list for PBXProject "Shake-Food" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68681F381C31021A001CB2D7 /* Debug */,
+				68681F391C31021A001CB2D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68681F3A1C31021A001CB2D7 /* Build configuration list for PBXNativeTarget "Shake-Food" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68681F3B1C31021A001CB2D7 /* Debug */,
+				68681F3C1C31021A001CB2D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 68681F211C31021A001CB2D7 /* Project object */;
+}
