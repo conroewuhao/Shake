@@ -11,8 +11,9 @@
 @interface FoodViewController ()<UITableViewDelegate,UITableViewDataSource,UIAlertViewDelegate>
 {
     UITableView *table;
-    NSMutableArray *dataArray;
 }
+@property(nonatomic,strong)NSMutableArray *dataArray;
+
 
 @end
 
@@ -21,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    dataArray=[[NSMutableArray alloc]init];
+    _dataArray=[[NSMutableArray alloc]init];
     
     //检查数组数据
     [self checkData];
@@ -42,9 +43,8 @@
 
 -(void)checkData{
 
-    dataArray=[[NSUserDefaults standardUserDefaults]objectForKey:@"foodArray"];
-    
-    if (dataArray.count>0) {
+    _dataArray=(NSMutableArray *)[[NSUserDefaults standardUserDefaults]objectForKey:@"foodArray"];
+    if (_dataArray.count>0) {
         [table reloadData];
     }
     
@@ -67,9 +67,7 @@
         cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellid];
     }
     
-    cell.textLabel.text=dataArray[indexPath.row];
-    
-    
+    cell.textLabel.text=_dataArray[indexPath.row];
     return cell;
 }
 
@@ -80,18 +78,47 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return dataArray?dataArray.count:10;
+    return _dataArray?_dataArray.count:10;
+}
+
+
+-(UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+
+    return UITableViewCellEditingStyleDelete;
+}
+
+
+-(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+
+    return YES;
+}
+
+-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+
+    if (editingStyle==UITableViewCellEditingStyleDelete) {
+        NSMutableArray *new=[NSMutableArray new];
+        [new removeAllObjects];
+        new=[NSMutableArray arrayWithArray:_dataArray];
+        [new removeObjectAtIndex:indexPath.row];
+        _dataArray=[[NSMutableArray alloc]init];
+        _dataArray=[NSMutableArray arrayWithArray:new];
+        [self removeContentAtIndex:indexPath.row];
+        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        
+    }
+
 }
 
 
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-    
     if (buttonIndex==0) {
         return;
     }
     if (buttonIndex==1) {
-        
         UITextField *tf=[alertView textFieldAtIndex:0];
         if (tf.text!=nil) {
             [self saveToLocalWithContent:tf.text];
@@ -101,7 +128,6 @@
 }
 
 -(void)saveToLocalWithContent:(NSString *)string{
-
 
     NSUserDefaults *def=[NSUserDefaults standardUserDefaults];
     NSMutableArray *localArr=[def objectForKey:@"foodArray"];
@@ -115,8 +141,9 @@
         
     }
     if (localArr && localArr.count>0) {
-        
-        NSMutableArray *arr=[NSMutableArray arrayWithArray:localArr];
+        NSMutableArray *arr=[NSMutableArray new];
+        [arr removeAllObjects];
+        arr=[NSMutableArray arrayWithArray:localArr];
         [arr addObject:string];
         [def setObject:arr forKey:@"foodArray"];
        [def synchronize];
@@ -126,9 +153,18 @@
     
 }
 
-
-
-
-
+-(void)removeContentAtIndex:(NSUInteger )index{
+    NSUserDefaults *def=[NSUserDefaults standardUserDefaults];
+    NSMutableArray *arr=[def objectForKey:@"foodArray"];
+    if (arr && arr.count>0 ) {
+        NSMutableArray *new=[NSMutableArray new];
+        new=[NSMutableArray arrayWithArray:arr];
+        [new removeObjectAtIndex:index];
+        [def setObject:new forKey:@"foodArray"];
+    
+    }
+    [def synchronize];
+    
+}
 
 @end

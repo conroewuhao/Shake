@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "RootViewController.h"
+#import "NSObject+localDateString.h"
 
 @interface AppDelegate ()
 
@@ -24,11 +25,13 @@
     [[UIApplication sharedApplication]setApplicationSupportsShakeToEdit:YES];
 
 
-
+    NSUserDefaults *def=[NSUserDefaults standardUserDefaults];
+    NSMutableArray *arr=[def objectForKey:@"foodAndTimeArray"];
+    
+    
     RootViewController *root=[[RootViewController alloc]init];
     UINavigationController *navi=[[UINavigationController alloc]initWithRootViewController:root];
     self.window.rootViewController=navi;
-
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];

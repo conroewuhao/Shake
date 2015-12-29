@@ -16,6 +16,7 @@
 		68681F3F1C310235001CB2D7 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68681F3E1C310235001CB2D7 /* RootViewController.m */; };
 		68681F421C310745001CB2D7 /* FoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68681F411C310745001CB2D7 /* FoodViewController.m */; };
 		68681F481C310792001CB2D7 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68681F471C310792001CB2D7 /* HistoryViewController.m */; };
+		68B587641C3221C000631391 /* NSObject+localDateString.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B587631C3221C000631391 /* NSObject+localDateString.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,8 @@
 		68681F411C310745001CB2D7 /* FoodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodViewController.m; sourceTree = "<group>"; };
 		68681F461C310792001CB2D7 /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
 		68681F471C310792001CB2D7 /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
+		68B587621C3221C000631391 /* NSObject+localDateString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+localDateString.h"; sourceTree = "<group>"; };
+		68B587631C3221C000631391 /* NSObject+localDateString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+localDateString.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,8 @@
 				6827897B1C31218700657056 /* DBThings.m */,
 				682789F81C313ABE00657056 /* UIColor+HexColor.h */,
 				682789F91C313ABE00657056 /* UIColor+HexColor.m */,
+				68B587621C3221C000631391 /* NSObject+localDateString.h */,
+				68B587631C3221C000631391 /* NSObject+localDateString.m */,
 			);
 			path = "Shake-Food";
 			sourceTree = "<group>";
@@ -166,6 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68B587641C3221C000631391 /* NSObject+localDateString.m in Sources */,
 				682789FA1C313ABE00657056 /* UIColor+HexColor.m in Sources */,
 				68681F311C31021A001CB2D7 /* AppDelegate.m in Sources */,
 				68681F2E1C31021A001CB2D7 /* main.m in Sources */,
