@@ -131,7 +131,7 @@
 
     NSUserDefaults *def=[NSUserDefaults standardUserDefaults];
     NSMutableArray *localArr=[def objectForKey:@"foodArray"];
-    if (!localArr) {
+    if (localArr.count==0) {
         localArr=[[NSMutableArray alloc]init];
         [localArr addObject:string];
         [def setObject:localArr forKey:@"foodArray"];
@@ -140,7 +140,7 @@
        // [table reloadData];
         
     }
-    if (localArr && localArr.count>0) {
+    else if(localArr.count>0) {
         NSMutableArray *arr=[NSMutableArray new];
         [arr removeAllObjects];
         arr=[NSMutableArray arrayWithArray:localArr];
@@ -148,7 +148,6 @@
         [def setObject:arr forKey:@"foodArray"];
        [def synchronize];
         [self checkData];
-        
     }
     
 }

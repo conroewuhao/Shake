@@ -12,6 +12,7 @@
 #import <AudioToolbox/AudioToolbox.h>
 #import "DBThings.h"
 #import "UIColor+HexColor.h"
+#import "NSString+WHAddtion.h"
 
 #define kScreenWidth  [UIScreen mainScreen].bounds.size.width
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
@@ -74,10 +75,8 @@
  */
 -(void)pressLeftButton
 {
-    FoodViewController *foot=[FoodViewController new];
-    [self.navigationController pushViewController:foot animated:YES];
-
-
+    FoodViewController *food=[FoodViewController new];
+    [self.navigationController pushViewController:food animated:YES];
 }
 
 /**
@@ -168,12 +167,14 @@
         }
         
     }];
-    
 
     NSString *contentString=contentLabel.text;
-    [[DBThings shareInstance]writeToDBWithContentAndDate:contentString];
+    if (![NSString isStringEmpty:contentString]) {
+        [[DBThings shareInstance]writeToDBWithContentAndDate:contentString];
+    }
+    else
+        return;
   
-    
 }
 
 /**
@@ -187,14 +188,9 @@
     NSArray *arr=@[[UIColor colorWithHexString:@"#AF4111"],[UIColor cyanColor],[UIColor orangeColor],[UIColor colorWithHexString:@"#5D8749"],[UIColor colorWithHexString:@"5D879D"]];
     
     int i=arc4random()%(arr.count);
-
-
     return arr[i];
 
 }
-
-
-
 
 
 @end

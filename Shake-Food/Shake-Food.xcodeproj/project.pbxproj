@@ -16,6 +16,7 @@
 		68681F3F1C310235001CB2D7 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68681F3E1C310235001CB2D7 /* RootViewController.m */; };
 		68681F421C310745001CB2D7 /* FoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68681F411C310745001CB2D7 /* FoodViewController.m */; };
 		68681F481C310792001CB2D7 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68681F471C310792001CB2D7 /* HistoryViewController.m */; };
+		686E52531C3A4D3E0077D3F6 /* NSString+WHAddtion.m in Sources */ = {isa = PBXBuildFile; fileRef = 686E52521C3A4D3E0077D3F6 /* NSString+WHAddtion.m */; };
 		68B587641C3221C000631391 /* NSObject+localDateString.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B587631C3221C000631391 /* NSObject+localDateString.m */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,8 @@
 		68681F411C310745001CB2D7 /* FoodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodViewController.m; sourceTree = "<group>"; };
 		68681F461C310792001CB2D7 /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
 		68681F471C310792001CB2D7 /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
+		686E52511C3A4D3E0077D3F6 /* NSString+WHAddtion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+WHAddtion.h"; sourceTree = "<group>"; };
+		686E52521C3A4D3E0077D3F6 /* NSString+WHAddtion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+WHAddtion.m"; sourceTree = "<group>"; };
 		68B587621C3221C000631391 /* NSObject+localDateString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+localDateString.h"; sourceTree = "<group>"; };
 		68B587631C3221C000631391 /* NSObject+localDateString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+localDateString.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,6 +92,8 @@
 				682789F91C313ABE00657056 /* UIColor+HexColor.m */,
 				68B587621C3221C000631391 /* NSObject+localDateString.h */,
 				68B587631C3221C000631391 /* NSObject+localDateString.m */,
+				686E52511C3A4D3E0077D3F6 /* NSString+WHAddtion.h */,
+				686E52521C3A4D3E0077D3F6 /* NSString+WHAddtion.m */,
 			);
 			path = "Shake-Food";
 			sourceTree = "<group>";
@@ -179,6 +184,7 @@
 				68681F421C310745001CB2D7 /* FoodViewController.m in Sources */,
 				68681F481C310792001CB2D7 /* HistoryViewController.m in Sources */,
 				68681F3F1C310235001CB2D7 /* RootViewController.m in Sources */,
+				686E52531C3A4D3E0077D3F6 /* NSString+WHAddtion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

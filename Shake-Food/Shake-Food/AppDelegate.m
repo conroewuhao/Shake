@@ -24,10 +24,8 @@
     //监测摇动
     [[UIApplication sharedApplication]setApplicationSupportsShakeToEdit:YES];
 
-
     NSUserDefaults *def=[NSUserDefaults standardUserDefaults];
     NSMutableArray *arr=[def objectForKey:@"foodAndTimeArray"];
-    
     
     RootViewController *root=[[RootViewController alloc]init];
     UINavigationController *navi=[[UINavigationController alloc]initWithRootViewController:root];
